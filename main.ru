@@ -3,9 +3,7 @@ from telegram import Update
 from telegram.ext import Updater, MessageHandler, Filters
 import vk_api
 
-TG_TOKEN = os.getenv("7442107911:AAE1JoahhF4dcdWbM4JKpqiZ3sLXaDG8WaE")
-VK_TOKEN = os.getenv("3e16f0f23e16f0f23e16f0f2053d24dab633e163e16f0f2562668114d0bfa9eda1f4d82")
-VK_GROUP_ID = os.getenv("218615711")
+
 
 def forward_to_vk(update: Update, context):
     # Проверяем, что это сообщение из канала
